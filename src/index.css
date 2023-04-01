@@ -1,0 +1,236 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    font-family: 'Nunito', sans-serif;
+    color: #393E46;
+    background-color: #EFEFEF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: larger;
+
+}
+
+.cards {
+    min-height: 100vh;
+    background-color: #222831;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    padding-left: 10rem;
+}
+
+.cardArea {
+    width: 33.33%;
+    min-width: 320px;
+    height: 550px;
+    padding-top: 100px;
+    display: inline-block;
+}
+
+.card {
+    height: 520px;
+    width: 370px;
+    border-radius: 10px;
+    background-color: #EFEFEF;
+    box-shadow: 0 0 20px 5px #686D76;
+    transition: 0.5s;
+}
+
+.image {
+    width: 80%;
+    padding: 10%;
+    height: 60%;
+    border-radius: 15%;
+
+}
+
+.cardContent {
+    text-align: center;
+}
+
+.title {
+    padding-top: 5px;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    cursor: default;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.info {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoTxt {
+    font-family: 'Nunito', sans-serif;
+    color: #393E46;
+    cursor: default;
+    margin: 10px 0;
+    padding-left: 7px;
+
+}
+
+.moredetails {
+    appearance: none;
+    background-color: #000000;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-width: 0;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.watchnow:disabled {
+    pointer-events: none;
+}
+
+.summaryStructure {
+    height: 100vh;
+    position: relative;
+    background-color: #222831;
+}
+
+.summaryCard {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* width: 55%;
+    height: 50%; */
+    background-color: black;
+    border-radius: 1rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5rem;
+}
+
+.headerTxtSummary {
+    color: white;
+}
+
+.summaryTxt {
+    color: white;
+    font-size: large;
+    margin-top: 3rem;
+    line-height: 2rem;
+    word-spacing: 2px;
+}
+
+.bookNowBtn {
+    appearance: none;
+    background-color: white;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-width: 0;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 3rem;
+}
+.bookingPageStructure{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.bookingFormStructureParent{
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;    
+    background-color: #222831;
+    color: white;
+    width: 40%;
+    border-radius: 1rem;
+    
+}
+.formHeading{
+    padding-top: 2.5rem;
+    padding-left: 3.5rem;
+    font-family: 'Abel', sans-serif;
+    font-size: 2.5rem;
+}
+.bookingForm{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 3.5rem;
+    color: white;
+}
+input[type=text],select{
+    color: white;
+    border: none;
+    background-color: #222831;
+    border-bottom: 1.5px solid white;
+    margin-bottom: 2rem;
+    padding: 0.3rem;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: medium;
+    letter-spacing: 1px;
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    outline: none;
+}
+input[type=submit]{
+    margin: 2rem 3rem 1rem;
+    padding: 0.8rem;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 2rem;
+    font-family: 'Asap', sans-serif;
+    font-size: large;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+input[type=submit]:hover{
+    background-color: #222831;
+    border: 2px solid white;
+    color: white;
+}
+
